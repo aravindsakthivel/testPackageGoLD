@@ -2,10 +2,12 @@ package testPackageGoLD
 
 import "fmt"
 
-func runTest(paramA string) {
+func RunTest(paramA string) {
 	if paramA == "" {
 		fmt.Println("paramA is empty")
 	}
 	paramA = "Hello"
-	fmt.Println("%s from test ", paramA)
+	// use paramA in printLn along with some static content like use paramA inside the string
+	fmt.Println("paramA is: ", paramA)
+
 }
